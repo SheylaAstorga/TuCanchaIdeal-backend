@@ -8,5 +8,8 @@
   },
   "keywords": [],
   "authores": "Sheyla Luciana Astorga,Kevin Stephan Torres flores, Elias Javier Juarez, Dylan Ruben Navarro, Juan Diego Quintana,David de Maria,Bruno Madozzo Romay",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
