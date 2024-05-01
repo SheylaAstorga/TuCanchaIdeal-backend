@@ -1,0 +1,12 @@
+{
+  "name": "tucanchaideal-backend",
+  "version": "1.0.0",
+  "description": "backend del proyecto tu cancha ideal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "authores": "Sheyla Luciana Astorga,Kevin Stephan Torres flores, Elias Javier Juarez, Dylan Ruben Navarro, Juan Diego Quintana,David de Maria,Bruno Madozzo Romay",
+  "license": "ISC"
+}
