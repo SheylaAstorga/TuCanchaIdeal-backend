@@ -1,5 +1,7 @@
 import mongoose from "mongoose";
 import Cancha from "./Cancha.js";
+import Usuario from "./Usuario.js";
+
 
 const establecimientoSchema = new mongoose.Schema({
     nombre: {
@@ -8,6 +10,11 @@ const establecimientoSchema = new mongoose.Schema({
         trim: true,
         minLength: 3,
         maxLength: 100,
+    },
+    propietario: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: Usuario,
+        required: true,
     },
     estado: {
         type: String,
