@@ -25,3 +25,7 @@ const reservaSchema = new Schema({
     maxLength: 16,
   }
 });
+
+const Reserva = mongoose.model("reserva", reservaSchema)
+
+export default Reserva;
