@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { listarCanchas } from "../controllers/canchas.controllers.js";
+import { borrarCancha, listarCanchas } from "../controllers/canchas.controllers.js";
 
 const router = Router();
 
-router.route('/canchas').get(listarCanchas)
+router.route('/canchas').get(listarCanchas).delete(borrarCancha)
 
 export default router;
