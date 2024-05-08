@@ -19,4 +19,9 @@ const reservaSchema = new Schema({
     type: Date,
     required: true,
   },
+  telefono:{
+    type: Number,
+    minLength: 10,
+    maxLength: 16,
+  }
 });
