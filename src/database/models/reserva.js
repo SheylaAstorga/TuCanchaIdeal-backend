@@ -14,5 +14,9 @@ const reservaSchema = new Schema({
   fecha: {
     type: Date,
     required: true,
-},
+  },
+  turno: {
+    type: Date,
+    required: true,
+  },
 });
