@@ -6,6 +6,7 @@ import {fileURLToPath} from 'url';
 import path from 'path';
 import canchasRouter from './src/routes/canchas.routes.js';
 import usuariosRouter from './src/routes/usuarios.routes.js';
+import reservaRouter from './src/routes/reserva.routes.js';
 import './src/database/database.js'
 
 const app = express();
@@ -26,3 +27,4 @@ app.use(express.static((path.join(__dirname,'/public'))))
 
 app.use('/api', canchasRouter)
 app.use('/api', usuariosRouter)
+app.use('/api', reservaRouter)
