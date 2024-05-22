@@ -19,12 +19,14 @@ const usuarioSchema = new Schema({
   estado: {
     type: String,
     required: true,
-    enum:['Activo','Suspendido']
+    enum:['activo','suspendido'],
+    default: "activo"
   },
   rol: {
     type: String,
     required: true,
-    enum: ['Administrador', 'Usuario', 'Dueño']
+    enum: ['administrador', 'usuario', 'dueño'],
+    default: "usuario"
   }
 });
 
