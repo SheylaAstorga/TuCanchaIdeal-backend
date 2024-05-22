@@ -9,7 +9,7 @@ export const eliminarUsuarios = async (req, res) => {
   try {
     const usuario = await Usuario.findById(req.params.id);
     if (!usuario) {
-      res.status(404).json({ mensaje: "Este Usuario no existe" });
+      return res.status(404).json({ mensaje: "Este Usuario no existe" });
     }
 
     await Usuario.findByIdAndDelete(req.params.id);
