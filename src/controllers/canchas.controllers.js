@@ -15,7 +15,7 @@ export const obtenerCancha = async (req, res) => {
 
 export const actualizarCancha = async (req, res) => {
   try {
-    const cancha = Cancha.findById(req.params.id);
+    const cancha = await Cancha.findById(req.params.id);
     if (!cancha) {
       res.status(404).json({ mensaje: "La Cancha no Existe" });
     }
