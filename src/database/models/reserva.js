@@ -13,13 +13,17 @@ const reservaSchema = new Schema({
     type: Date,
     required: true,
   },
-  telefono:{
+  telefono: {
     type: Number,
     minLength: 10,
     maxLength: 16,
-  }
+  },
+  nombre: {
+    type: String,
+    required: true,
+  },
 });
 
-const Reserva = mongoose.model("reserva", reservaSchema)
+const Reserva = mongoose.model("reserva", reservaSchema);
 
 export default Reserva;
