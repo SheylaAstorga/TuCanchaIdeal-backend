@@ -16,7 +16,7 @@ export const borrarCancha = async(req,res) =>{
                 mensaje: "No se pudo eliminar la cancha, el id es incorrecto",
             });
         }
-        await Establecimiento.findByIdAndDelete(req.paarams.id, req.body);
+        await Establecimiento.findByIdAndDelete(req.params.id);
         res.status(200).json({ mensaje: "La cancha fue eliminada exitosamente"});
     }catch(error){
         console.error(error);
