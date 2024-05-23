@@ -22,6 +22,10 @@ const reservaSchema = new Schema({
     type: String,
     required: true,
   },
+  email: {
+    type: String,
+    required: true,
+  },
 });
 
 const Reserva = mongoose.model("reserva", reservaSchema);
