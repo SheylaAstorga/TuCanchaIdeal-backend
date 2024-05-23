@@ -1,16 +1,10 @@
 import mongoose, { Schema } from "mongoose";
-import Cancha from "./Cancha.js";
 
 const reservaSchema = new Schema({
-  canchas: [
-    {
-      cancha: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: Cancha,
-        required: true,
-      },
-    },
-  ],
+  canchas: {
+    type: Number,
+    required: true,
+  },
   fecha: {
     type: Date,
     required: true,
@@ -19,13 +13,21 @@ const reservaSchema = new Schema({
     type: Date,
     required: true,
   },
-  telefono:{
+  telefono: {
     type: Number,
     minLength: 10,
     maxLength: 16,
-  }
+  },
+  nombre: {
+    type: String,
+    required: true,
+  },
+  email: {
+    type: String,
+    required: true,
+  },
 });
 
-const Reserva = mongoose.model("reserva", reservaSchema)
+const Reserva = mongoose.model("reserva", reservaSchema);
 
 export default Reserva;
