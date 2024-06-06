@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import Cancha from "./Cancha.js";
-import Usuario from "./Usuario.js";
+import Usuario from "./usuario.js";
 
 
 const establecimientoSchema = new mongoose.Schema({
